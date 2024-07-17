@@ -24,31 +24,19 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
                 setSelectedContactId(null);
             })
         }
-    }, [selectedContactId]);
+    }, []);
 
     return (
-/*         <table>
-            <thead>
-                <tr>
-                    <th colSpan="3">{contact?.name}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Contact ID: {contact?.id}</td>
-                    <td>Email: {contact?.email}</td>
-                    <td>Phone #: {contact?.phone}</td>
-                </tr>
-            </tbody>
-        </table> */
     <>
-        <div>Name: {contact?.name}</div>
-        <div>Contact ID: {contact?.id}</div>
-        <div>Username: {contact?.username}</div>
-        <div>Email: {contact?.email}</div>
-        <div>Phone #: {contact?.phone}</div>
-        <div>Website: {contact?.website}</div>
-        <button id="return">Return</button>
+        <div>
+            <p>Name: {contact?.name}</p>
+            <p>Contact ID: {contact?.id}</p>
+            <p>Username: {contact?.username}</p>
+            <p>Email: {contact?.email}</p>
+            <p>Phone #: {contact?.phone}</p>
+            <p>Website: {contact?.website}</p>
+            <button id="return">Return</button>
+        </div>
     </>
     )
 }
